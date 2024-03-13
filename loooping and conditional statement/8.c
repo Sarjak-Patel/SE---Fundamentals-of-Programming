@@ -3,6 +3,16 @@
 #include<stdio.h>
 main()
 {
-	int number = -1562,max;
-    
+	int number = -1562,max,d;
+	number=number<0? -number : number;
+	while(number<0)
+	{
+		d=number % 10;
+		if(digit>max)
+		{
+			max=d;
+		}
+		number /= 10;
+	}    
+	printf(" %d",max);
 }
